@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="619.0" prefWidth="513.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.groupChat.controller.LoginFormController">
+   <children>
+      <Text layoutX="104.0" layoutY="92.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome to Group Chat">
+         <font>
+            <Font name="System Bold Italic" size="27.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="268.0" fitWidth="266.0" layoutX="127.0" layoutY="139.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/pngegg%20(12).png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="txtUserName" layoutX="115.0" layoutY="474.0" prefHeight="32.0" prefWidth="310.0" />
+      <Label layoutX="197.0" layoutY="423.0" text="Enter User Name">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Separator layoutX="31.0" layoutY="117.0" prefHeight="3.0" prefWidth="448.0" />
+      <Button layoutX="183.0" layoutY="539.0" mnemonicParsing="false" onAction="#loginOnAction" prefHeight="32.0" prefWidth="153.0" text="Login " />
+      <AnchorPane layoutY="-1.0" prefHeight="18.0" prefWidth="518.0" style="-fx-background-color: #2092CC;" />
+      <AnchorPane layoutY="601.0" prefHeight="18.0" prefWidth="518.0" style="-fx-background-color: #2092CC;" />
+   </children>
+</AnchorPane>

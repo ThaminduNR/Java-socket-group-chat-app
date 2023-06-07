@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="650.0" prefWidth="537.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.groupChat.controller.ChatFormController">
+   <children>
+      <AnchorPane prefHeight="69.0" prefWidth="544.0" style="-fx-background-color: #2092CC;">
+         <children>
+            <FontAwesomeIconView fill="WHITE" layoutX="22.0" layoutY="51.0" size="40" text="" />
+            <Label fx:id="lblUserName" layoutX="70.0" layoutY="14.0" text="Text Name" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Label>
+            <Text layoutX="72.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Online" />
+         </children>
+      </AnchorPane>
+      <TextField fx:id="txtMessage" layoutX="15.0" layoutY="576.0" prefHeight="58.0" prefWidth="412.0" />
+      <FontAwesomeIconView fill="#2092cc" layoutX="492.0" layoutY="619.0" onMouseClicked="#sendMessageOnAction" size="30" text="">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </FontAwesomeIconView>
+      <FontAwesomeIconView fx:id="fileAttached" fill="#2092cc" layoutX="450.0" layoutY="621.0" onMouseClicked="#attachedFileOnAction" size="30" text="">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </FontAwesomeIconView>
+      <ScrollPane fx:id="scrollPane" layoutY="69.0" prefHeight="492.0" prefWidth="544.0">
+         <content>
+            <VBox fx:id="vBox" prefHeight="490.0" prefWidth="536.0" />
+         </content>
+      </ScrollPane>
+      <ImageView fx:id="toBeSentImg" fitHeight="41.0" fitWidth="98.0" layoutX="24.0" layoutY="585.0" pickOnBounds="true" preserveRatio="true" />
+      <FontAwesomeIconView fx:id="cancelBtn" fill="#2092cc" layoutX="388.0" layoutY="619.0" onMouseClicked="#messageCancelBtn" size="30" text="">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </FontAwesomeIconView>
+   </children>
+</AnchorPane>
